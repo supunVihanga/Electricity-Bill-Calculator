@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Electricity bill</title>
+		<script type="text/javascript" src="Script.js" >	</script>	
+		<link rel="stylesheet" type="text/css" href="Style/Style.css">
+		
+	</head>
+	<body>
+		<h3>Domestic Electricity Bill</h3>
+		<div class="border">
+			<table>
+				<tr colspan="4">
+				<td align="right">No of Units Used :</td>
+				<td align="right">
+					<input type="number" name="" min="0" id="unit">
+				</td>
+				<td align="left"><label>KWh</label></td>
+				</tr>
+				<tr align="Right">
+					<td></td>
+					<td>
+						<button onclick="document.getElementById('units').value=''">Clear</button>
+					</td>
+
+				
+				</tr>
+				<tr>
+					<td></td>
+					<td align="right"><button type="button" id="bill" onclick="Calc()">Calculate my Bill</button></td>
+				</tr>
+				<tr>
+					<td  align="center" >
+							Your Bill amount is :
+					</td>
+					<td  align="center" id="rs">
+							00.00
+					</td>
+				</tr>
+			</table>	
+			
+		</div>
+		
+	</body>
+</html>	
